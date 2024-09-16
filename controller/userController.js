@@ -22,7 +22,6 @@ const loginUser = async (req, res) => {
     res.json({ success: false, message: "failed to login user" });
   }
 };
-
 const createToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET);
 };

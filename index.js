@@ -7,7 +7,6 @@ import 'dotenv/config'
 import cartRouter from './route/cartRoute.js'
 import orderRouter from './route/orderRoute.js'
 
-
 // initialize express app
 const app = express()
 const port = 7500
@@ -29,8 +28,6 @@ app.get("/", (req, res) => {
 
 // connect db
 connectDB()
-
-
 
 app.listen(port,() =>{
     console.log(`app running on port: ${port}`)
